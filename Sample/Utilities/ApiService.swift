@@ -15,8 +15,6 @@ class ApiService {
     static let shared = ApiService()
 
     func request<T: Codable>(reuquest: RequestTarget, completion: @escaping Handler<T, NetworkError>) {
-
-        print("#### url: \(reuquest.url)")
         let task = URLSession.shared.dataTask(with: reuquest.url) { (data, response, error) in
             let errorDataTask = error.map(NetworkError.fetchFailed)
 
