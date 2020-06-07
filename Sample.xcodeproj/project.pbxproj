@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,8 +17,7 @@
 		A6E84774248CA0170087D6C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6E84772248CA0170087D6C7 /* LaunchScreen.storyboard */; };
 		A6E8477F248CA0170087D6C7 /* SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E8477E248CA0170087D6C7 /* SampleTests.swift */; };
 		A6E8478A248CA0170087D6C7 /* SampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E84789248CA0170087D6C7 /* SampleUITests.swift */; };
-		A6E84799248CD30F0087D6C7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6E84798248CD30F0087D6C7 /* Alamofire.framework */; };
-		A6E8479A248CD30F0087D6C7 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A6E84798248CD30F0087D6C7 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A6E8479C248CD6C90087D6C7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6E84798248CD30F0087D6C7 /* Alamofire.framework */; };
 		E1BD09FBF81F4A74F844C954 /* Pods_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BA16D0E3E061E1277FE18E /* Pods_Sample.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,13 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A6E8479B248CD30F0087D6C7 /* Embed Frameworks */ = {
+		A6E8479E248CD6C90087D6C7 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A6E8479A248CD30F0087D6C7 /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,7 +84,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1BD09FBF81F4A74F844C954 /* Pods_Sample.framework in Frameworks */,
-				A6E84799248CD30F0087D6C7 /* Alamofire.framework in Frameworks */,
+				A6E8479C248CD6C90087D6C7 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,7 +197,7 @@
 				A6E84761248CA0130087D6C7 /* Frameworks */,
 				A6E84762248CA0130087D6C7 /* Resources */,
 				A6E84797248CD0A20087D6C7 /* Carthage Run Script */,
-				A6E8479B248CD30F0087D6C7 /* Embed Frameworks */,
+				A6E8479E248CD6C90087D6C7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -369,14 +367,15 @@
 			files = (
 			);
 			inputFileListPaths = (
+				"$(SRCROOT)/input.xcfilelist",
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 			);
 			name = "Carthage Run Script";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/output.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
