@@ -1,0 +1,3 @@
+cache:
+  local: ~/Library/Caches/Rome/
+  s3Bucket: sample-cache/rome
