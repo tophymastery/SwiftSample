@@ -1,0 +1,17 @@
+# OS X Finder
+.DS_Store
+
+# Xcode
+build
+
+# CocoaPods
+Pods
+
+# Carthage
+Carthage
+
+# fastlane
+
+fastlane/report.xml
+fastlane/screenshots
+fastlane/test_output
