@@ -15,18 +15,24 @@ class ApiService {
     static let shared = ApiService()
 
     func request<T: Codable>(reuquest: RequestTarget, completion: @escaping Handler<T, NetworkError>) {
-        let task = URLSession.shared.dataTask(with: reuquest.url) { (data, response, error) in
-            let errorDataTask = error.map(NetworkError.fetchFailed)
+        AccessTokenService().refreshTokenIfNeed { tokenResult in
 
-            let result = Result<Data, NetworkError>(data,errorDataTask)
-                .mapError(NetworkError.map)
-                .map { ($0, T.self) }
-                .flatMap(Data.mapResult)
+            if case let .failure(error) = tokenResult {
+                completion(.failure(error))
+                return
+            }
 
-            completion(result)
+            let task = URLSession.shared.dataTask(with: reuquest.url) { (data, response, error) in
+                let result = Result<Data, NetworkError>(data, .noError)
+                    .mapError { _ in NetworkError.map(error, response) }
+                    .map { ($0, T.self) }
+                    .flatMap(Data.mapResult)
 
+                completion(result)
+            }
+
+            task.resume()
         }
 
-        task.resume()
     }
 }

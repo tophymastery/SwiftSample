@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2969EFB77114552A67651A58 /* Pods_SampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA713E768269E10C748D79D5 /* Pods_SampleTests.framework */; };
 		3E95EF257C290307D4AC8362 /* Pods_SampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1491E334D2A515AF7E305B9 /* Pods_SampleUITests.framework */; };
+		A622E2EA249F2A7B00948E0B /* Memoize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A622E2E9249F2A7B00948E0B /* Memoize.swift */; };
 		A6E84768248CA0130087D6C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E84767248CA0130087D6C7 /* AppDelegate.swift */; };
 		A6E8476A248CA0130087D6C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E84769248CA0130087D6C7 /* SceneDelegate.swift */; };
 		A6E8476C248CA0130087D6C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E8476B248CA0130087D6C7 /* ViewController.swift */; };
@@ -23,6 +24,13 @@
 		A6E847A8248CF7ED0087D6C7 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E847A7248CF7ED0087D6C7 /* Data+Extension.swift */; };
 		A6E847AB248CF82C0087D6C7 /* RequestTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E847AA248CF82C0087D6C7 /* RequestTarget.swift */; };
 		A6E847AD248CF8590087D6C7 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E847AC248CF8590087D6C7 /* NetworkError.swift */; };
+		A6E847B0248D0F6C0087D6C7 /* AccessTokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E847AF248D0F6C0087D6C7 /* AccessTokenService.swift */; };
+		A6E847B2248D126E0087D6C7 /* TokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E847B1248D126E0087D6C7 /* TokenRequest.swift */; };
+		A6E847B4248D16650087D6C7 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E847B3248D16650087D6C7 /* Configuration.swift */; };
+		A6E847B6248D16FD0087D6C7 /* AccessTokenLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E847B5248D16FD0087D6C7 /* AccessTokenLoader.swift */; };
+		A6E847B8248D17210087D6C7 /* NetworkLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E847B7248D17210087D6C7 /* NetworkLoader.swift */; };
+		A6E847BC248D1C820087D6C7 /* RequestHeaderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E847BB248D1C820087D6C7 /* RequestHeaderBuilder.swift */; };
+		A6E847BF248D33070087D6C7 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E847BE248D33070087D6C7 /* AccessToken.swift */; };
 		E1BD09FBF81F4A74F844C954 /* Pods_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BA16D0E3E061E1277FE18E /* Pods_Sample.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +70,7 @@
 		7782FB22A8128F53E9BE5927 /* Pods-Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample.debug.xcconfig"; path = "Target Support Files/Pods-Sample/Pods-Sample.debug.xcconfig"; sourceTree = "<group>"; };
 		7F00D60D9E98C75CC1F46B48 /* Pods-SampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleTests.release.xcconfig"; path = "Target Support Files/Pods-SampleTests/Pods-SampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		8F601FA5F3732744B7E7AD15 /* Pods-SampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleTests.debug.xcconfig"; path = "Target Support Files/Pods-SampleTests/Pods-SampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A622E2E9249F2A7B00948E0B /* Memoize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memoize.swift; sourceTree = "<group>"; };
 		A6E84764248CA0130087D6C7 /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6E84767248CA0130087D6C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6E84769248CA0130087D6C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +91,13 @@
 		A6E847A7248CF7ED0087D6C7 /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
 		A6E847AA248CF82C0087D6C7 /* RequestTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTarget.swift; sourceTree = "<group>"; };
 		A6E847AC248CF8590087D6C7 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		A6E847AF248D0F6C0087D6C7 /* AccessTokenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenService.swift; sourceTree = "<group>"; };
+		A6E847B1248D126E0087D6C7 /* TokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRequest.swift; sourceTree = "<group>"; };
+		A6E847B3248D16650087D6C7 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		A6E847B5248D16FD0087D6C7 /* AccessTokenLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenLoader.swift; sourceTree = "<group>"; };
+		A6E847B7248D17210087D6C7 /* NetworkLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLoader.swift; sourceTree = "<group>"; };
+		A6E847BB248D1C820087D6C7 /* RequestHeaderBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHeaderBuilder.swift; sourceTree = "<group>"; };
+		A6E847BE248D33070087D6C7 /* AccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessToken.swift; sourceTree = "<group>"; };
 		A9D380C9ED2DABDDD01E0544 /* Pods-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample.release.xcconfig"; path = "Target Support Files/Pods-Sample/Pods-Sample.release.xcconfig"; sourceTree = "<group>"; };
 		B1491E334D2A515AF7E305B9 /* Pods_SampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA713E768269E10C748D79D5 /* Pods_SampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				A6E847A9248CF8160087D6C7 /* Request */,
+				A6E847BD248D32F60087D6C7 /* Respone */,
 				A6E847A2248CE0D00087D6C7 /* Screens */,
 				A6E847A1248CE0C60087D6C7 /* Custom Views */,
 				A6E847A0248CE0B60087D6C7 /* Utilities */,
@@ -214,6 +231,11 @@
 			children = (
 				A6E847A3248CE3ED0087D6C7 /* ApiService.swift */,
 				A6E847AC248CF8590087D6C7 /* NetworkError.swift */,
+				A6E847AF248D0F6C0087D6C7 /* AccessTokenService.swift */,
+				A6E847B3248D16650087D6C7 /* Configuration.swift */,
+				A6E847B5248D16FD0087D6C7 /* AccessTokenLoader.swift */,
+				A6E847B7248D17210087D6C7 /* NetworkLoader.swift */,
+				A622E2E9249F2A7B00948E0B /* Memoize.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -236,8 +258,18 @@
 			isa = PBXGroup;
 			children = (
 				A6E847AA248CF82C0087D6C7 /* RequestTarget.swift */,
+				A6E847B1248D126E0087D6C7 /* TokenRequest.swift */,
+				A6E847BB248D1C820087D6C7 /* RequestHeaderBuilder.swift */,
 			);
 			path = Request;
+			sourceTree = "<group>";
+		};
+		A6E847BD248D32F60087D6C7 /* Respone */ = {
+			isa = PBXGroup;
+			children = (
+				A6E847BE248D33070087D6C7 /* AccessToken.swift */,
+			);
+			path = Respone;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -465,14 +497,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6E847BC248D1C820087D6C7 /* RequestHeaderBuilder.swift in Sources */,
+				A6E847B8248D17210087D6C7 /* NetworkLoader.swift in Sources */,
 				A6E8476C248CA0130087D6C7 /* ViewController.swift in Sources */,
+				A6E847B0248D0F6C0087D6C7 /* AccessTokenService.swift in Sources */,
 				A6E847AD248CF8590087D6C7 /* NetworkError.swift in Sources */,
 				A6E847A6248CEA380087D6C7 /* Result+Extension.swift in Sources */,
+				A6E847B6248D16FD0087D6C7 /* AccessTokenLoader.swift in Sources */,
 				A6E84768248CA0130087D6C7 /* AppDelegate.swift in Sources */,
+				A6E847B2248D126E0087D6C7 /* TokenRequest.swift in Sources */,
 				A6E847A4248CE3ED0087D6C7 /* ApiService.swift in Sources */,
 				A6E8476A248CA0130087D6C7 /* SceneDelegate.swift in Sources */,
 				A6E847AB248CF82C0087D6C7 /* RequestTarget.swift in Sources */,
 				A6E847A8248CF7ED0087D6C7 /* Data+Extension.swift in Sources */,
+				A6E847B4248D16650087D6C7 /* Configuration.swift in Sources */,
+				A622E2EA249F2A7B00948E0B /* Memoize.swift in Sources */,
+				A6E847BF248D33070087D6C7 /* AccessToken.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
